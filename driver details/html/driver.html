@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/2947604fef.js" crossorigin="anonymous"></script>
+<title> ReadyRides | Easy Booking | Smarter & Safety </title>
+<link rel= "shortcut icon" href= "readyrides logo.png">
+<script src="../js/DD.js"> </script>
+
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+ <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+ 
+<link rel="stylesheet" href="../styless/drv.css" type="text/css">
+</head>
+<body>
+<nav class= "header"> <!--header-->
+	<div class="nav"><!--navigation division-->
+		<div ><!--logo div-->
+			<a href="homepage.html"><!--image-->
+			<img src="../imagess/readyrides logo.png" alt="logo" class="logo">
+			</a>
+		</div>
+		<div class="list_div"><!--list div-->
+			<ul class="nav_list"><!--navigation list-->
+				<li><a class="li_a" href=""> Trip </a>
+				</li>
+				<li><a class="li_a" href=""> Drive </a>
+				</li>
+				<li><a class="li_a" href=""> Check </a>
+				</li>
+			</ul>
+			<ul class="right_list"><!--right list-->
+				<li><a class="li_a" href=""> Log in </a>
+				</li>
+				<li><a class="li_a" href= ""> Sign Up </a>
+				</li>
+			</ul>
+		</div>
+		<div ><!--help icon-->
+			<a href=""><i class="far fa-question-circle" id="help_icon"></i></a>
+		</div>
+	<button type="button"><!--side-->
+		<i class= "fas fa-bars"></i>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</button>	
+</nav>
+
+<br>
+<center>
+<img class = "logoimg" src="../imagess/RR.png">
+</center>
+
+
+
+<nav>
+ <ul class="menu">
+	
+        <li class="menu"><a href="#">Home</a></li>
+        <li class="menu"><a href="#">Account</a></li>
+		<li class="menu"><a href="#">Driver's feedback</a></li>
+        <li class="menu"><a href="#">Activity History</a></li>
+        <li class="menu"><a href="#">Help</a></li>
+	
+       </ul>
+       <hr>
+</nav>
+
+<a href="#" class="NN">
+  <span>Notification</span>
+  <span class="OO">00</span>
+</a>
+
+<p class="wlc">Welcome to ReadyRides </p>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.text {
+  color: white;
+  font-size: 19px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: red;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.ZZZ{
+height:550px;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"><b>ReadyRides</b></div>
+  <img src="../imagess/10.jpg" style="width:100%"class="ZZZ">
+  <div class="text"><b><h2>RESERVE  A  CAR  IN  FEW  SECONDS</h2></b></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"><b>ReadyRides</b></div>
+  <img src="../imagess/20.jpg" style="width:100%"class="ZZZ">
+  <div class="text"><b><h2>GET  YOUR  RIDE  IN  ANYWHERE</h2></b></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"><b>ReadyRides</b></div>
+  <img src="../imagess/30.jpg" style="width:100%" class="ZZZ">
+  <div class="text"><b><h2>WE'LL  TAKE  YOU</h2></b></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"><b>ReadyRides</b></div>
+  <img src="../imagess/40.jpg" style="width:100%" class="ZZZ">
+  <div class="text"><b><h2>WHEREVER  YOU  NEED</h2></b></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000);
+ 
+}
+
+    $('button').click(function(){
+        $('.alert').addClass("show");
+        $('.alert').removeClass("hide");
+        $('.alert').addClass("showAlert");
+        setTimeout(function(){
+          $('.alert').removeClass("show");
+          $('.alert').addClass("hide");
+        },5000);
+      });
+      $('.close-btn').click(function(){
+        $('.alert').removeClass("show");
+        $('.alert').addClass("hide");
+      });
+
+</script>
+
+<br>
+
+
+<hr>
+
+
+<br><br>
+
+
+
+
+<p class="DDD">- MIND ON THE DRIVER. . .HANDS ON THE WHEEL. . .EYES ON THE ROAD -</p>
+
+
+<button class="button">Update Password</button>
+
+<br><br><br><br>
+<hr class="hr_2">
+<footer><!--foot-->
+	<br><h3 class="h3_2"> Download Our App Now ! </h3><!--h3 2-->
+	<div id="app_1"><!--link to apps-->	
+		<a href=""><i class="fab fa-apple" id="app_2"></i></a>&nbsp;&nbsp;&nbsp;
+		<a href=""><i class="fab fa-google-play" id= "app_2"></i></a>&nbsp;&nbsp;&nbsp;
+		<a href=""><i class="fab fa-windows" id="app_2"></i></a>
+	</div>
+	<div id="pro"><!--product-->
+		<p><a href="" class="product">Visit Help Center</a></p>
+		<p><a href="" class="product">Company</a></p>
+		<p><a href="" class="product">Contact</a></p><br>
+	</div>
+	<div class="social"><!--social m-->
+		<a href=""><i class="fab fa-facebook-f" id="sm"></i></a>&nbsp;&nbsp;
+		<a href=""><i class="fa fa-instagram" id="sm"></i></a>&nbsp;&nbsp;
+		<a href=""><i class="fab fa-twitter" id="sm"></i></a>&nbsp;&nbsp;
+		<a href=""><i class="fab fa-youtube" id="sm"></i></a>&nbsp;&nbsp;
+		<a href=""><i class="fab fa-linkedin" id="sm"></i></a>
+	</div>
+	<div class="copy"><!--copyright-->
+		&copy; 2020 ReadyRides (Pvt) Ltd. All right reserved
+	</div>
+	<div class="privacy"><!--privacy term list-->
+		<a href="" class="privacy">Privacy</a> |
+		<a href="" class="privacy">Terms</a>
+	</div>
+</footer>
+</body>
+</html>
+
