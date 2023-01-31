@@ -6,7 +6,7 @@ for the CRUD operations of the Vehicle Reservation System.
    ⚙ Technologies - HTML, CSS, JavaScript, PHP, MySQL
 <br>
 <br>
-   📸 Screenshots - [View]()
+   📸 Screenshots - [View](https://drive.google.com/drive/u/0/folders/1p-IHShZfhdwXvDIZpUwdU1okY-ccPvQ2)
 
 
 
